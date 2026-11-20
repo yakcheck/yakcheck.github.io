@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>약 체크 | {{닉네임}} 약사 정리본</title>
+<meta name="description" content="약사가 같은 기준으로 비교한 영양제·약 정리본 모음">
+<meta property="og:title" content="약 체크 | {{닉네임}} 약사 정리본">
+<meta property="og:description" content="고민별로 찾고, 같은 기준으로 비교하세요.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@700&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+/* 인스타 프로필 링크용 모음 페이지. 휴대폰 한 손 스크롤 기준(최대 520px). */
+:root{--paper:#F3F6F8;--card:#fff;--ink:#2B3640;--deep:#14324A;--sea:#1F6F8B;--line:#DCE3E8;--accent:#F2A541;--soft:#FDEBD0;--muted:#7C8890}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.65 "Noto Sans KR",system-ui,sans-serif;word-break:keep-all}
+main{max-width:520px;margin:0 auto;padding:36px 18px 56px}
+.me{text-align:center}
+.avatar{width:84px;height:84px;border-radius:50%;margin:0 auto 12px;background:var(--deep);color:#fff;display:grid;place-items:center;font:700 30px "Gowun Batang",serif}
+h1{font:700 27px/1.3 "Gowun Batang",serif;color:var(--deep);margin:0}
+h1 mark{background:linear-gradient(transparent 58%,var(--soft) 58%);color:inherit}
+.bio{margin:8px 0 0;font-size:15px;color:var(--muted)}
+.list{display:grid;gap:12px;margin-top:28px;padding:0;list-style:none}
+.list a,.list .soon{display:flex;gap:14px;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px;text-decoration:none;color:inherit;min-height:76px}
+.list a:active{transform:scale(.99)}
+.list a:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.ic{flex:none;width:46px;height:46px;border-radius:12px;background:var(--soft);display:grid;place-items:center;font-weight:700;color:var(--deep);font-size:14px}
+.list b{display:block;color:var(--deep);font-size:17px;line-height:1.35}
+.list small{display:block;color:var(--muted);font-size:13.5px;line-height:1.45}
+.new{display:inline-block;margin-left:6px;font-size:11.5px;font-weight:700;background:var(--accent);color:var(--deep);border-radius:999px;padding:0 7px;vertical-align:2px}
+.soon{opacity:.6}
+.how{margin-top:30px;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px;font-size:14.5px}
+.how h2{font:700 17px "Noto Sans KR";color:var(--deep);margin:0 0 6px}
+.how ul{margin:0;padding-left:18px}.how li{margin:3px 0}
+footer{margin-top:30px;text-align:center;font-size:13px;color:var(--muted)}
+footer a{color:var(--sea)}
+</style>
+</head>
+<body>
+<main>
+ <div class="me">
+  <div class="avatar" aria-hidden="true">약</div>
+  <h1>{{닉네임}} 약사의<br><mark>약 체크</mark></h1>
+  <p class="bio">약국 상담 기준 그대로, 같은 잣대로 비교한 정리본이에요.<br>내 고민부터 찾아보세요.</p>
+ </div>
+
+ <!-- 정리본이 늘어나면 아래에 <li> 한 줄씩 추가 -->
+ <ul class="list">
+  <li><div class="soon"><span class="ic">준비</span><div><b>첫 번째 정리본 준비 중</b><small>곧 공개돼요</small></div></div></li>
+ </ul>
+
+ <section class="how">
+  <h2>이 정리본은 이렇게 만들어요</h2>
+  <ul>
+   <li>모든 제품을 같은 기준량당 가격으로 맞춰 비교해요.</li>
+   <li>함량·원료는 제품 라벨 기준이고, 가격 기준일을 함께 적어요.</li>
+   <li>협찬·공구가 있으면 맨 위에 먼저 밝혀요.</li>
+  </ul>
+ </section>
+
+ <footer>이 자료는 일반 정보이며 진료·처방을 대신하지 않아요.<br>복용 중인 약이 있으면 약사와 상담하세요.</footer>
+</main>
+</body>
+</html>
