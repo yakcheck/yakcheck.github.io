@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>우리 아이 종합비타민 라벨 체크 | 약 체크</title>
+<meta name="description" content="약국·시중 어린이 종합비타민 12종을 라벨 수치로 비교했어요. 비타민 A·D, 아연, 당류부터 확인하세요.">
+<meta property="og:title" content="우리 아이 종합비타민, 라벨로 확인하기 | 약 체크">
+<meta property="og:description" content="어린이 종합비타민 12종 라벨 비교. 고민별·나이별로 찾아보세요.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="summary.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@700&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+/* 레이아웃: 휴대폰 한 줄 읽기. 확인 3가지 → 고민별 → 나이별 → 요약표 저장 → 전체 성분표 → 상담 */
+:root{--paper:#F3F6F8;--card:#fff;--ink:#2B3640;--deep:#14324A;--sea:#1F6F8B;--line:#DCE3E8;--accent:#F2A541;--soft:#FDEBD0;
+ --good:#D5EFE3;--gap:#ECEFF2;--warn:#FAD9C1;--alert:#F7D4D4;--muted:#7C8890}
+*{box-sizing:border-box}
+html{background:var(--paper);overflow-x:clip}
+body{margin:0;color:var(--ink);font:16px/1.7 "Noto Sans KR",system-ui,sans-serif;word-break:keep-all;overflow-wrap:break-word}
+main{max-width:720px;margin:0 auto;padding:28px 18px 64px}
+h1,h2,h3{font-family:"Gowun Batang",serif;color:var(--deep);text-wrap:balance;margin:0}
+h1{font-size:31px;line-height:1.35}
+h1 mark{background:linear-gradient(transparent 58%,var(--soft) 58%);color:inherit}
+h2{font-size:23px;line-height:1.4;margin:0 0 6px}
+h3{font-size:18px;line-height:1.4}
+section{margin-top:44px}
+a{color:var(--sea)}
+.eyebrow{font-size:13px;font-weight:700;color:var(--sea);margin:0 0 10px}
+.sub{color:var(--muted);font-size:15px;margin:0 0 16px}
+.lead{margin:14px 0 0}
+.jump{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}
+.jump a{padding:8px 13px;border-radius:999px;background:var(--card);border:1px solid var(--line);text-decoration:none;color:var(--deep);font-size:14.5px;font-weight:500}
+.jump a.hot{background:var(--accent);border-color:var(--accent);font-weight:700}
+a:focus-visible,button:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.check{counter-reset:c;display:grid;gap:10px;margin:0;padding:0;list-style:none}
+.check li{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 16px 14px 56px;position:relative}
+.check li::before{counter-increment:c;content:counter(c);position:absolute;left:16px;top:14px;width:28px;height:28px;border-radius:50%;background:var(--deep);color:#fff;font-weight:700;font-size:15px;display:grid;place-items:center}
+.check b{color:var(--deep);font-size:17px}
+.check p{margin:4px 0 0;font-size:15px}
+.worry{display:grid;gap:12px}
+.worry article{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px}
+.worry .need{margin:6px 0 10px;font-size:14.5px;color:var(--muted)}
+.worry .need b{color:var(--deep);font-weight:500}
+.mini{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.mini li{border-top:1px solid var(--line);padding-top:8px}
+.mini b{display:block;color:var(--deep);font-size:15.5px}
+.mini small{display:block;color:var(--muted);font-size:14px;line-height:1.5}
+.tip{margin:12px 0 0;padding:9px 11px;background:var(--soft);border-radius:10px;font-size:13.5px;line-height:1.55}
+.age{display:grid;gap:12px}
+.age article{background:var(--card);border:1px solid var(--line);border-left:5px solid var(--sea);border-radius:14px;padding:14px 16px}
+.age ul{margin:6px 0 0;padding-left:18px}.age li{margin:4px 0;font-size:15px}
+.save{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px;text-align:center}
+.save img{width:100%;border-radius:10px;border:1px solid var(--line)}
+.btn{display:block;width:100%;margin-top:10px;padding:13px;border:0;border-radius:12px;background:var(--accent);color:var(--deep);font:700 16px "Noto Sans KR";cursor:pointer}
+.tw{overflow-x:auto;border:1px solid var(--line);border-radius:14px;background:var(--card)}
+table{border-collapse:separate;border-spacing:0;font-size:14px;width:100%}
+th,td{padding:8px 9px;border-bottom:1px solid var(--line);text-align:center;vertical-align:middle}
+thead th{background:var(--deep);color:#fff;font-weight:700;font-size:13px;white-space:nowrap}
+thead th small{display:block;font-weight:400;opacity:.8;font-size:11px}
+tbody th{text-align:left;font-weight:500;background:var(--card);position:sticky;left:0;min-width:132px;max-width:150px;border-right:1px solid var(--line);font-size:13.5px;line-height:1.4;z-index:1}
+tbody th small{display:block;color:var(--muted);font-weight:400;font-size:12px}
+td.gap{background:var(--gap);color:var(--muted)}
+td.warn{background:var(--warn);font-weight:700}
+td.alert{background:var(--alert);font-weight:700;color:#8A2B2B}
+td.good{background:var(--good)}
+td.txt{text-align:left;font-size:12.5px;min-width:170px;line-height:1.5}
+#full table{min-width:1180px}
+#full td{white-space:nowrap}
+#full td.txt{white-space:normal}
+.legend{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 10px;font-size:13px}
+.legend span{border-radius:6px;padding:1px 8px}
+.note{font-size:13.5px;color:var(--muted);margin-top:8px}
+.consult{background:var(--deep);color:#fff;border-radius:16px;padding:18px}
+.consult h2{color:#fff}
+.consult p{margin:8px 0 0;font-size:15px}
+.src{font-size:13px;color:var(--muted);margin-top:16px}
+footer{margin-top:40px;font-size:14px;color:var(--muted);text-align:center}
+footer a{color:var(--sea)}
+</style>
+</head>
+<body>
+<main>
+<p class="eyebrow">약 체크 · 어린이 종합비타민</p>
+<h1>우리 아이 종합비타민,<br><mark>라벨로 확인하기</mark></h1>
+<p class="lead">어린이 종합비타민은 제품마다 설계가 완전히 달라요. 특히 인기 액상 스틱 상당수는 <b>비타민 A·D가 표시돼 있지 않고</b>, 당류와 아연 함량도 차이가 커요.</p>
+<p>약국과 시중에서 많이 찾는 <b>12개 제품</b>을 라벨 수치 그대로 정리했어요. 광고 문구 말고 숫자로 골라 보세요.</p>
+<nav class="jump" aria-label="바로가기">
+ <a class="hot" href="#check">먼저 확인할 3가지</a><a href="#worry">고민별로 찾기</a><a href="#age">나이별 가이드</a><a href="#save">요약표 저장</a><a href="#full">전체 성분표</a>
+</nav>
+
+<section id="check">
+<h2>고르기 전에 꼭 확인할 3가지</h2>
+<p class="sub">표에서 색으로 표시한 부분이에요.</p>
+<ol class="check">
+ <li><b>액상 스틱은 비타민 A·D가 있는지</b><p>액상 스틱 7종은 라벨에 비타민 A·D 함량이 없어요. 실내 생활이 많은 아이라면 비타민 D 드롭 같은 제품을 따로 챙길지 상담해 보세요.</p></li>
+ <li><b>당류가 1회 4g 이상인지</b><p>맛을 내려고 당류가 1회 최대 10g까지 들어간 제품이 있어요. 입이 짧거나 충치가 걱정되면 당류부터 확인하세요. '미표기'는 라벨에 당류 수치가 없다는 뜻이에요.</p></li>
+ <li><b>아연이 나이별 상한을 넘지 않는지</b><p>아연의 하루 상한섭취량은 1~2세 6mg, 3~5세 9mg이에요. 아연 8.5mg 제품은 1~2세에게는 상한을 넘으니, 다른 영양제와 겹치지 않는지도 함께 보세요.</p></li>
+</ol>
+</section>
+
+<section id="worry">
+<h2>아이 고민별로 찾기</h2>
+<p class="sub">가까운 고민부터 보세요. 먹일 수 있는 나이는 제품 라벨에서 꼭 확인해 주세요.</p>
+<div class="worry">
+ <article><h3>고기를 안 먹고 입이 짧아요</h3>
+  <p class="need">함께 볼 성분: <b>비타민 B군, 아미노산, 효소 원료(파파인·브로멜라인), 울금</b></p>
+  <ul class="mini">
+   <li><b>마이타민업</b><small>울금추출물 + 아미노산 · 아연 2.8mg · 당류 2g</small></li>
+   <li><b>엔큐엔에이 도담키즈드림</b><small>엽산 340μg · 실크펩타이드 · 파파인 원료 · 당류 3g</small></li>
+  </ul></article>
+ <article><h3>단체생활을 시작했어요</h3>
+  <p class="need">함께 볼 성분: <b>아연</b>(정상적인 면역 기능에 필요), <b>엘더베리 등 부원료</b></p>
+  <ul class="mini">
+   <li><b>바로타민 멀티비타민 미네랄</b><small>아연 8.5mg · 엘더베리 · 로얄젤리 · 당류 4g<br>1~2세는 아연 상한(6mg)을 넘어요</small></li>
+   <li><b>더하이비타</b><small>아연 3mg · 엘더베리 · 철분 원료 · 당류 미표기(1g 미만 추정)</small></li>
+  </ul></article>
+ <article><h3>예민하고 잠들기 어려워해요</h3>
+  <p class="need">함께 볼 성분: <b>마그네슘</b>(신경과 근육 기능 유지에 필요), <b>셀렌</b></p>
+  <ul class="mini">
+   <li><b>종근당 벨더웰 아이벨타민</b><small>마그네슘 105mg · 셀렌 30.25μg · 타우린<br>당류 10g이라 식후에 먹이는 걸 권해요</small></li>
+  </ul></article>
+ <article><h3>활동량이 많고 쉽게 지쳐요</h3>
+  <p class="need">함께 볼 성분: <b>비타민 B군</b>(에너지 생성에 필요), <b>아르기닌·라이신</b></p>
+  <ul class="mini">
+   <li><b>챔큐비타</b><small>B1 5mg · B2 36.18mg · B6 30mg 고함량 B군<br>B6 30mg은 1~2세 상한(20mg)을 넘고 3~5세 상한과 같아요. 짧게 쓰는 걸 권해요</small></li>
+   <li><b>도담도담 트리플비타</b><small>B군 + 비타민 E 20mg + 홍삼·작약·황기</small></li>
+   <li><b>잘크톤 앰플</b><small>L-라이신 + L-아르기닌 + 베타인 · B1은 0.9mg으로 낮은 편</small></li>
+   <li><b>조은아이시럽</b><small>시럽 제형 · B3 26.4mg · 비오틴 125μg · 이노시톨</small></li>
+  </ul></article>
+ <article><h3>밥·채소를 잘 안 먹어요 (기초 영양)</h3>
+  <p class="need">함께 볼 성분: <b>비타민 A·D·C, 칼슘, 아연</b>이 함께 든 종합 설계</p>
+  <ul class="mini">
+   <li><b>조아제약 티라노</b><small>A 600μg · D 500IU · C 60mg · 칼슘 59mg · 철 3.52mg · 아연 4mg</small></li>
+   <li><b>제일헬스 투엑스비 츄어블</b><small>A 600μg · D 500IU · C 100mg · 칼슘 59mg · 아연 4mg</small></li>
+   <li><b>한미약품 텐텐</b><small>A 600μg · D 500IU · 칼슘 31mg · 색소·물엿·정제백당 함유</small></li>
+  </ul>
+  <p class="tip">츄어블 3종의 비타민 A 600μg은 1~2세 상한섭취량과 같은 양이에요. 츄어블을 씹을 수 있는 나이인지, 다른 제품과 겹치지 않는지 확인하세요.</p></article>
+</div>
+</section>
+
+<section id="age">
+<h2>나이별 가이드</h2>
+<div class="age">
+ <article><h3>돌 전후 ~ 만 2세</h3><ul>
+  <li>제형: 조은아이시럽, 또는 액상 스틱을 묽게 희석</li>
+  <li>바로타민은 아연 8.5mg으로 이 나이 상한(6mg)을 넘어요.</li>
+  <li>액상 스틱에는 비타민 D가 없으니 D 드롭을 함께 쓸지 상담하세요.</li></ul></article>
+ <article><h3>만 3~5세 (단체생활·식습관 형성기)</h3><ul>
+  <li>밥 안 먹고 마른 아이: 도담키즈드림, 마이타민업</li>
+  <li>단체생활을 시작한 아이: 더하이비타, 바로타민</li>
+  <li>예민하고 잠투정이 있는 아이: 아이벨타민</li></ul></article>
+ <article><h3>만 6세 이상 (츄어블 가능)</h3><ul>
+  <li>기초 영양 채우기: 티라노, 투엑스비 츄어블</li>
+  <li>짧게 피로 회복: 챔큐비타 (고함량 B군)</li></ul></article>
+</div>
+</section>
+
+<section id="save">
+<h2>요약표 한 장으로 저장하기</h2>
+<p class="sub">약국에 오실 때 보여 주시거나 가족에게 보내기 좋아요.</p>
+<div class="save">
+ <img id="sumimg" src="summary.jpg" alt="어린이 종합비타민 12종 요약 비교표">
+ <button class="btn" id="saveBtn" type="button">📥 요약표 저장하기</button>
+ <p class="note">버튼이 안 되면 사진을 2~3초 꾹 눌러 저장하세요.</p>
+</div>
+</section>
+
+<section id="full">
+<h2>전체 성분표 (12종)</h2>
+<p class="sub">라벨의 1회 섭취량 기준이에요. 표를 옆으로 밀어 보세요 →</p>
+<div class="legend"><span style="background:var(--gap)">없음 = 라벨에 함량 표시 없음</span><span style="background:var(--warn)">주의 = 1~2세 상한 이상</span><span style="background:var(--alert)">당류 4g 이상</span></div>
+<div class="tw"><table><thead id="fh"></thead><tbody id="fb"></tbody></table></div>
+<p class="note">빈 칸(없음)은 라벨 영양정보에 수치가 없다는 뜻이에요. 부원료로 들어 있어도 함량이 표시되지 않으면 '부원료' 칸에만 적었어요. 상한섭취량은 2020 한국인 영양소 섭취기준(보건복지부·한국영양학회) 기준이에요.</p>
+</section>
+
+<section>
+<div class="consult">
+ <h2>약사 1:1 상담 안내</h2>
+ <p>이 정리본은 제품 라벨 데이터를 바탕으로 한 비교이고, 절대적인 선택 기준은 아니에요.</p>
+ <p>아이의 식습관, 활동량, 성장 상태, 지금 불편한 점에 따라 맞는 조합은 달라져요. "우리 아이에게 뭐가 맞을지", "먹이던 유산균·철분제와 겹치지 않는지" 궁금하면 <b>댓글이나 DM</b>으로 편하게 물어봐 주세요.</p>
+</div>
+<p class="src">출처: 각 제품 라벨 표시 정보(작성 시점 기준) · 보건복지부·한국영양학회, 「2020 한국인 영양소 섭취기준」 상한섭취량</p>
+</section>
+
+<footer><a href="../">← 약 체크 정리본 모음</a><br>이 자료는 일반 정보이며 진료·처방을 대신하지 않아요.</footer>
+</main>
+
+<script>
+{
+/* 라벨 1회 섭취량 기준. 빈 값 = 라벨에 함량 표시 없음 */
+const P = [
+ {n:"마이타민업",f:"액상 스틱",s:"2포",t:"포도",b1:1.2,b2:1.5,b3:15,b6:1.5,zn:2.8,sug:"2",sub:"울금추출물, 아미노산, 글루콘산마그네슘, 비타민C, 비타민A, 비오틴, 엽산"},
+ {n:"엔큐엔에이 도담키즈드림",f:"액상 스틱",s:"2포",t:"포도",b1:2,b2:2,b3:15,b5:5,b6:2,fol:340,zn:3,sug:"3",sub:"레드비트농축액, 실크펩타이드, 올리브잎추출물, 프락토올리고당, 효소혼합제제, 파인애플추출분말(파파인), 비타민C, 글루콘산마그네슘"},
+ {n:"도담도담 트리플비타",f:"액상 스틱",s:"1포",t:"요구르트",b1:2.47,b2:3.65,b3:10.8,b6:3.29,e:20,mg:2.5,zn:5,sug:"미표기",sub:"홍삼, 작약, 황기 등 한방원료"},
+ {n:"더하이비타",f:"액상 스틱",s:"2포",t:"블루베리·요구르트",b1:1.2,b2:1.4,b3:15,b6:1.5,bio:30,zn:3,sug:"미표기(1g 미만 추정)",sub:"마그네슘, 리포퍼철분, 아미노산, 아르기닌, 프락토올리고당, 파인애플(브로멜라인), 엘더베리농축액, 비트레드"},
+ {n:"종근당 벨더웰 아이벨타민",f:"액상 스틱",s:"2포",t:"애플그레이프",b1:1.2,b2:1.4,b3:15,b6:1.5,mg:105,zn:4.25,se:30.25,sug:"10",sub:"타우린, 아세로라추출물분말, 파파야추출분말, 파인애플농축액, 울금추출분말, 비타민C, 혼합제제(L-로이신 등)"},
+ {n:"한미약품 텐텐",f:"츄어블정",s:"2정",t:"딸기",b1:2,b2:2,b3:10.8,b6:2.7,fol:240,b12:6,a:600,c:50,d:500,e:6.7,ca:31,mg:3.56,sug:"미표기",sub:"코엔자임Q10",add:"색소, 물엿, 정제백당"},
+ {n:"잘크톤 앰플",f:"앰플",s:"1앰플",t:"딸기",b1:0.9,b2:0.5,b3:14,b6:1.1,mg:5,zn:4.7,sug:"",sub:"베타인, 이노시톨, L-라이신염산염, L-아르지닌, 젖산칼슘, L-아스파트산, 산화아연, 파인애플추출분말"},
+ {n:"조은아이시럽",f:"시럽",s:"1회분",t:"단맛",b1:1,b3:26.4,b6:1,bio:125,sug:"",sub:"이노시톨"},
+ {n:"챔큐비타",f:"액상 스틱",s:"2포",t:"단맛",b1:5,b2:36.18,b3:24,b6:30,zn:5,sug:"미표기",sub:"L-아르기닌염산염, 시트르산, 아스코르브산",add:"보존제, 백당"},
+ {n:"바로타민 멀티비타민 미네랄",f:"액상 스틱",s:"1포",t:"엘더베리",b1:1.2,b2:1.4,b3:15,b6:1.5,bio:30,b12:6,e:11,zn:8.5,sug:"4",sub:"엘더베리농축액, 황금혼합추출물, 비타민C, 동결건조로얄젤리분말, 아미노산혼합"},
+ {n:"조아제약 티라노",f:"츄어블정",s:"2정",t:"블루베리·레몬·라즈베리",b1:2,b2:2.3,b3:16.5,b6:2.76,bio:200,fol:200,b12:6,a:600,c:60,d:500,e:20,ca:59,mg:2.5,zn:4,fe:3.52,sug:"",sub:"홍삼, 작약, 황기"},
+ {n:"제일헬스 투엑스비 츄어블",f:"츄어블정",s:"2정",t:"딸기",b1:2,b2:2.3,b3:10,b5:6,b6:2.7,b12:6,a:600,c:100,d:500,e:10,ca:59,mg:3.8,zn:4,sug:"",sub:""}
+];
+/* 1~2세 상한섭취량(2020 KDRI): 아연 6mg, B6 20mg, 비타민A 600μg RAE */
+const UL = {zn:6, b6:20, a:600};
+const COLS = [["b1","B1","mg"],["b2","B2","mg"],["b3","B3","mg"],["b5","B5","mg"],["b6","B6","mg"],["bio","비오틴","μg"],["fol","엽산","μg"],["b12","B12","μg"],
+ ["a","A","μg RAE"],["c","C","mg"],["d","D","IU"],["e","E","mg α-TE"],["ca","칼슘","mg"],["mg","마그네슘","mg"],["zn","아연","mg"],["fe","철","mg"],["se","셀렌","μg"]];
+const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const cls = (p,k) => p[k] == null ? "gap" : (UL[k] && p[k] >= UL[k]) ? "warn" : "";
+const sugCls = s => parseFloat(s) >= 4 ? "alert" : (!s || s.startsWith("미표기")) ? "gap" : "";
+document.getElementById("fh").innerHTML = `<tr><th>제품</th><th>제형<small>1회</small></th>${COLS.map(([k,l,u])=>`<th>${l}<small>${u}</small></th>`).join("")}<th>당류<small>g</small></th><th>부원료</th><th>첨가물</th></tr>`;
+document.getElementById("fb").innerHTML = P.map(p => `<tr><th>${esc(p.n)}<small>${esc(p.t)}</small></th><td>${esc(p.f)}<br><small>${esc(p.s)}</small></td>${
+ COLS.map(([k]) => `<td class="${cls(p,k)}">${p[k] ?? "없음"}</td>`).join("")}<td class="${sugCls(p.sug)}">${esc(p.sug || "미표기")}</td><td class="txt">${esc(p.sub||"-")}</td><td class="txt">${esc(p.add||"-")}</td></tr>`).join("");
+document.getElementById("saveBtn").addEventListener("click", async () => {
+ try { const b = await (await fetch("summary.jpg")).blob(), f = new File([b], "약체크_어린이종합비타민_요약표.jpg", {type:"image/jpeg"});
+  if (navigator.canShare && navigator.canShare({files:[f]})) return navigator.share({files:[f]});
+  const a = document.createElement("a"); a.href = URL.createObjectURL(b); a.download = f.name; a.click();
+ } catch (e) { document.querySelector(".save .note").textContent = "사진을 2~3초 꾹 눌러 저장해 주세요." }
+});
+}
+</script>
+</body>
+</html>
